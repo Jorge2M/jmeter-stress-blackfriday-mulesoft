@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Stress Test Loyalty Black Friday (2022)" enabled="true">
+      <stringProp name="TestPlan.comments">Confluence 2022
+   https://confluence.mango.com/display/CUS/03+-+Black+Friday+2022
+
+Para obtener datos de usuarios ContactIDs.csv
+   1. Descargar de LoyalGuru, entorno de PRE, un listado de usuarios (500).
+   2. Ejecutar la consulta: 
+	SSELECT c.EXTERNAL_ID, c.json_email.emails.contactId as contactID, c.json_email.emails.email as email
+	FROM NCR_OWNER.CONSUMER c
+	WHERE c.json_email.emails.contactId IN (...ids...)
+   3. Obtener tokens de Okta para:
+	1. API Customer Repository (uat-e-consumer).
+ 	2. API Loyal Guru en UAT para online (uat-p-loyal).
+	3. API Loyal Guru en UAT para tienda (uat-p-sms).
+
+En cada Thread Group se configura el número de threads para cada prueba funcional.
+Dentro de cada Thread Group, hay un Precise Throughput controller. Configurar en él la cadencia en TPS buscada.
+Dentro de cada Thread Group hay un Module controler. NO TOCAR.
+
+Para cada prueba hay un Test Fragment, con el fichero de datos correspondiente y las llamadas a las API para cada prueba.
+
+Para ejecutar el test:
+	1. Se puede ejecutar el test en varias inyectoras, deshabilitando los tests correspondientes en cada Thread Group.
+	2. Configurar las variables de server, tokens de autenticación, etc.
+	3. Run
+</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables definidas por el Usuario" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="servercustomer" elementType="Argument">
+            <stringProp name="Argument.name">servercustomer</stringProp>
+            <stringProp name="Argument.value">apitest2.mango.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="serverloyalty" elementType="Argument">
+            <stringProp name="Argument.name">serverloyalty</stringProp>
+            <stringProp name="Argument.value">apitest2.mango.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="customerRepositoryToken" elementType="Argument">
+            <stringProp name="Argument.name">customerRepositoryToken</stringProp>
+            <stringProp name="Argument.value">eyJraWQiOiI0cnNGTURCb3pfV2FtZUMyOUZoeFB6REdoenkyNEhSeGZNOUVMNTZ6ektNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULm5vX21KeUVHV2dWejVhWkpQb1NzR2h0cUtzZl9WdC1USGF3T3JTOUF6dmsiLCJpc3MiOiJodHRwczovL21hbmdvLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NjU0ODI2MTIsImV4cCI6MTY2NTUyNTgxMiwiY2lkIjoiMG9hb3M2czg2TGtLTzhtNnAweDYiLCJzY3AiOlsibWFuZ28iXSwic3ViIjoiMG9hb3M2czg2TGtLTzhtNnAweDYifQ.TiAprshajLXsff-gyVrPB7JhQJgKm2J-zROVxPZkCKdl-OoEZIdNl8uTpxYhpbf9Lowigyt1hhSOMScmPfH5Vtji9_HpZDWBv9VW6DED7VxB_4Xd3x3R0yVzYAiw_TIk_6U3zESf7EmcA8WxarZBgvg1NywNA1yC6aaDgjssJHhPxir0LDQ8wTNw0XzL8Igv9cWBlOI-OxZkrRy3lGDHgVn2UESmdxLLdv7ytVIyZZ6-krFEWbWF_Vk1Nai84RyM5uJWp2qGrGdhVqAE9e5VTjuGOK_gwxEpE03l5jspKXvwGr7GRv9Ht16jagg4iNc3Sbp-Os8VpQWMUOQ4CHPEAA</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="contactable" elementType="Argument">
+            <stringProp name="Argument.name">contactable</stringProp>
+            <stringProp name="Argument.value">false</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="orderSimulateToken" elementType="Argument">
+            <stringProp name="Argument.name">orderSimulateToken</stringProp>
+            <stringProp name="Argument.value">eyJraWQiOiI0cnNGTURCb3pfV2FtZUMyOUZoeFB6REdoenkyNEhSeGZNOUVMNTZ6ektNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlVSOHpsWUpEWnBUWUQ4Y25oTTR6TTBGWld4U0JiWDVsMnNCalJFeGRYYTgiLCJpc3MiOiJodHRwczovL21hbmdvLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NjU0OTc4MDAsImV4cCI6MTY2NTU0MTAwMCwiY2lkIjoiMG9hb29sYnd4bnlyalVuR3cweDYiLCJzY3AiOlsiY3IiXSwic3ViIjoiMG9hb29sYnd4bnlyalVuR3cweDYifQ.VdHveXz9YB9Bqs1owggXpVWgqrSvJveDlVASS_1TDP43Tza1WuXMcg_cF1WKnrRAc6Bsr1K5EFCL9PmWz9LGkc9LNdXkeaQ2ljfLJKomiGv-2yWSWTB687_HuI63w0pC3Ns3CbzH9IyvJSRK_l5IndGqQS3YV0F-YTEoX5cn2oR_8-unuYoDkMORa2pJmcSSG7aDkneLXYiYkvqf8_6omNOM32P1uqvZG2n4sFFn1LRfzw2zSNRzWXkU8z4KfGsibTIMXIHMWGyNjpxh_heebdtIgM3zkNrCjXfh3RodNZFYFPWJH71jFfoOig70-fB0-XrMBXsidHypKiSBryVPwQ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ticketSimulateToken" elementType="Argument">
+            <stringProp name="Argument.name">ticketSimulateToken</stringProp>
+            <stringProp name="Argument.value">eyJraWQiOiI0cnNGTURCb3pfV2FtZUMyOUZoeFB6REdoenkyNEhSeGZNOUVMNTZ6ektNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlhoMzFfZnRrYVZJWThOLWVDNG1ldmNod25xM3VHQ1NtWUpvY0ZpTWJ0a00iLCJpc3MiOiJodHRwczovL21hbmdvLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NjU0OTgwOTcsImV4cCI6MTY2NTU0MTI5NywiY2lkIjoiMG9hb29sYnd4bnlyalVuR3cweDYiLCJzY3AiOlsiY3IiXSwic3ViIjoiMG9hb29sYnd4bnlyalVuR3cweDYifQ.fYVGRSzW2DOa4quMeuY4e7_eDmrkawRxD3W4lqw7Uztx5Lm2xydJP8tWsZB2KxYJDhWAwprOxpKX5A-7bPL68e0xkM_1YsLxFPbl_In8pK_GIYsRC_83MJlzzg-dUmkO8SoAe9XdbqoZj9D0cJpmYA05Y22wppfRUUSOyFF0zvJmBAQif1MhZtAq59dYgBSrKHhZsmXNgxsm-KGfUoBrJeyc9yyEFmnAhi1Kdoy2baF5erN0CDs0_HgOQx6UnKRoJLG3NgDaw5j9zpdNTgJhfAmG7S-heiRWoVIPFkk7BzO2h8Y3ghFOUmJLJs_NPQ7ZhUYwMPdocZsuL7JXh6auNw</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Customer Repository GET Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>throughput</name>
+            <value>150.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+          <longProp name="duration">600</longProp>
+          <intProp name="batchSize">50</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>1.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="randomSeed">0</longProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="946606176">Customer Repository GET Test Fragment</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Customer Repository GET with Loyalty Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>throughput</name>
+            <value>150.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+          <longProp name="duration">600</longProp>
+          <intProp name="batchSize">50</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>1.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="randomSeed">0</longProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="548612711">Stress Test Loyalty Black Friday (2022)</stringProp>
+            <stringProp name="736770248">Customer Repository GET with Loyalty Test Fragment</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Customer Repository SEARCH Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>throughput</name>
+            <value>34.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+          <longProp name="duration">600</longProp>
+          <intProp name="batchSize">10</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>1.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="randomSeed">0</longProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="548612711">Stress Test Loyalty Black Friday (2022)</stringProp>
+            <stringProp name="-651582342">Customer Repository SEARCH Test Fragment</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Customer Repository PUT Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>throughput</name>
+            <value>8.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+          <longProp name="duration">600</longProp>
+          <intProp name="batchSize">2</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>1.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="randomSeed">0</longProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="662879321">Customer Repository PUT Test Fragment</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Store Ticket Simulate Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">15</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>throughput</name>
+            <value>5.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+          <longProp name="duration">600</longProp>
+          <intProp name="batchSize">15</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>1.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="randomSeed">0</longProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="1283743127">Store Ticket Simulate Test Fragment</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Online Order Simulate Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>throughput</name>
+            <value>15.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+          <longProp name="duration">600</longProp>
+          <intProp name="batchSize">20</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>1.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="randomSeed">0</longProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="1731792129">Online Order Simulate Test Fragment</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Customer Repository GET Test Fragment" enabled="true"/>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Registrados (tabla REGISTRO)" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">contactIDs.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.group</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">externalID,contactID,email</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET Customer NO Loyalty Info" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${servercustomer}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/uat-e-consumer/consumer/${externalID}?discardLoyalty=true</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${customerRepositoryToken}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="Extract flag loyalty From JSON Response" enabled="false">
+            <stringProp name="VAR">isLoyaltyCustomer</stringProp>
+            <stringProp name="JSONPATH">$[&apos;isLoyaltyCustomer&apos;]</stringProp>
+            <stringProp name="DEFAULT"></stringProp>
+            <stringProp name="VARIABLE"></stringProp>
+            <stringProp name="SUBJECT">BODY</stringProp>
+            <stringProp name="INPUT_FORMAT">JSON</stringProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+          <hashTree/>
+          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Assertion flag Loyalty is true" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">String isLoyaltyCustomer =  vars.get(&quot;isLoyaltyCustomer&quot;);
+if (isLoyaltyCustomer==null || &quot;false&quot;.compareTo(isLoyaltyCustomer)==0) {
+	AssertionResult.setFailure(true); 
+}
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223Assertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Customer Repository GET with Loyalty Test Fragment" enabled="true"/>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Registrados (tabla REGISTRO)" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">contactIDs.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.group</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">externalID,contactID,email</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET Customer with Loyalty Info" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.domain">${servercustomer}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/uat-e-consumer/consumer/${externalID}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${customerRepositoryToken}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="Extract flag loyalty From JSON Response" enabled="false">
+            <stringProp name="VAR">isLoyaltyCustomer</stringProp>
+            <stringProp name="JSONPATH">$[&apos;isLoyaltyCustomer&apos;]</stringProp>
+            <stringProp name="DEFAULT"></stringProp>
+            <stringProp name="VARIABLE"></stringProp>
+            <stringProp name="SUBJECT">BODY</stringProp>
+            <stringProp name="INPUT_FORMAT">JSON</stringProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+          <hashTree/>
+          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Assertion flag Loyalty is true" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">String isLoyaltyCustomer =  vars.get(&quot;isLoyaltyCustomer&quot;);
+if (isLoyaltyCustomer==null || &quot;false&quot;.compareTo(isLoyaltyCustomer)==0) {
+	AssertionResult.setFailure(true); 
+}
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223Assertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Customer Repository SEARCH Test Fragment" enabled="true"/>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Registrados (tabla REGISTRO)" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">contactIDs.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.group</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">externalID,contactID,email</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SEARCH Customer" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${servercustomer}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/uat-e-consumer/consumer/search?input=${email}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${customerRepositoryToken}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="Extract flag loyalty From JSON Response" enabled="false">
+            <stringProp name="VAR">isLoyaltyCustomer</stringProp>
+            <stringProp name="JSONPATH">$[&apos;isLoyaltyCustomer&apos;]</stringProp>
+            <stringProp name="DEFAULT"></stringProp>
+            <stringProp name="VARIABLE"></stringProp>
+            <stringProp name="SUBJECT">BODY</stringProp>
+            <stringProp name="INPUT_FORMAT">JSON</stringProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+          <hashTree/>
+          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Assertion flag Loyalty is true" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">String isLoyaltyCustomer =  vars.get(&quot;isLoyaltyCustomer&quot;);
+if (isLoyaltyCustomer==null || &quot;false&quot;.compareTo(isLoyaltyCustomer)==0) {
+	AssertionResult.setFailure(true); 
+}
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223Assertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Customer Repository PUT Test Fragment" enabled="true"/>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Registrados (tabla REGISTRO)" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">contactIDs.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.group</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">externalID,contactID,email</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PUT Consumer" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;registration&quot;: {&#xd;
+        &quot;touchpoint&quot;: 2100000149,&#xd;
+        &quot;originType&quot;: 101,&#xd;
+        &quot;owner&quot;: &quot;Mango&quot;,&#xd;
+        &quot;commercialArea&quot;: 1,&#xd;
+        &quot;modifierId&quot;: &quot;manual&quot;&#xd;
+    },&#xd;
+    &quot;emails&quot;: [&#xd;
+        {&#xd;
+            &quot;contactId&quot;: &quot;${contactID}&quot;,&#xd;
+            &quot;contactable&quot;: false&#xd;
+        }&#xd;
+    ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${servercustomer}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/uat-e-consumer/consumer/${externalID}</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${tokenapplication}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Store Ticket Simulate Test Fragment" enabled="true"/>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Registrados (tabla REGISTRO)" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">contactIDs.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.group</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">externalID,contactID,email</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Simulate Store Ticket" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;redeemLikes&quot;: true,&#xd;
+    &quot;ticketID&quot;: 1010221183200104498,&#xd;
+    &quot;operationDttm&quot;: &quot;2022-10-10T10:09:57.71Z&quot;,&#xd;
+    &quot;operationType&quot;: &quot;D&quot;,&#xd;
+    &quot;currency&quot;: &quot;EUR&quot;,&#xd;
+    &quot;touchpoint&quot;: {&#xd;
+        &quot;location&quot;: 5314,&#xd;
+        &quot;device&quot;: &quot;1&quot;&#xd;
+    },&#xd;
+    &quot;externalCustomerId&quot;: &quot;${contactID}&quot;,&#xd;
+    &quot;payment&quot;: {&#xd;
+        &quot;checkPaymentSpecified&quot;: false,&#xd;
+        &quot;CouponPaymentSpecified&quot;: false,&#xd;
+        &quot;OtherTypePaymentSpecified&quot;: false,&#xd;
+        &quot;amounts&quot;: {&#xd;
+            &quot;amount&quot;: [&#xd;
+                {&#xd;
+                    &quot;concept&quot;: &quot;TotalAmount&quot;,&#xd;
+                    &quot;value&quot;: 29.97,&#xd;
+                    &quot;currency&quot;: &quot;EUR&quot;&#xd;
+                }&#xd;
+            ]&#xd;
+        }&#xd;
+    },&#xd;
+    &quot;ticketItems&quot;: [&#xd;
+        {&#xd;
+            &quot;itemId&quot;: 1,&#xd;
+            &quot;itemType&quot;: &quot;A&quot;,&#xd;
+            &quot;item&quot;: {&#xd;
+                &quot;model&quot;: &quot;37001031&quot;,&#xd;
+                &quot;size&quot;: &quot;22&quot;,&#xd;
+                &quot;color&quot;: &quot;01&quot;,&#xd;
+                &quot;unitPrice&quot;: 9.99&#xd;
+            },&#xd;
+            &quot;restocking&quot;: false,&#xd;
+            &quot;quantity&quot;: 1,&#xd;
+            &quot;uom&quot;: &quot;u&quot;,&#xd;
+            &quot;salesPrice&quot;: 9.99,&#xd;
+            &quot;amount&quot;: 9.99,&#xd;
+            &quot;sendCommision&quot;: false,&#xd;
+            &quot;isUpdated&quot;: false,&#xd;
+            &quot;isReservation&quot;: false&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;itemId&quot;: 2,&#xd;
+            &quot;itemType&quot;: &quot;A&quot;,&#xd;
+            &quot;item&quot;: {&#xd;
+                &quot;model&quot;: &quot;37001031&quot;,&#xd;
+                &quot;size&quot;: &quot;22&quot;,&#xd;
+                &quot;color&quot;: &quot;01&quot;,&#xd;
+                &quot;unitPrice&quot;: 9.99&#xd;
+            },&#xd;
+            &quot;restocking&quot;: false,&#xd;
+            &quot;quantity&quot;: 1,&#xd;
+            &quot;uom&quot;: &quot;u&quot;,&#xd;
+            &quot;salesPrice&quot;: 9.99,&#xd;
+            &quot;amount&quot;: 9.99,&#xd;
+            &quot;sendCommision&quot;: false,&#xd;
+            &quot;isUpdated&quot;: false,&#xd;
+            &quot;isReservation&quot;: false&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;itemId&quot;: 3,&#xd;
+            &quot;itemType&quot;: &quot;A&quot;,&#xd;
+            &quot;item&quot;: {&#xd;
+                &quot;model&quot;: &quot;37001031&quot;,&#xd;
+                &quot;size&quot;: &quot;22&quot;,&#xd;
+                &quot;color&quot;: &quot;01&quot;,&#xd;
+                &quot;unitPrice&quot;: 9.99&#xd;
+            },&#xd;
+            &quot;restocking&quot;: false,&#xd;
+            &quot;quantity&quot;: 1,&#xd;
+            &quot;uom&quot;: &quot;u&quot;,&#xd;
+            &quot;salesPrice&quot;: 9.99,&#xd;
+            &quot;amount&quot;: 9.99,&#xd;
+            &quot;sendCommision&quot;: false,&#xd;
+            &quot;isUpdated&quot;: false,&#xd;
+            &quot;isReservation&quot;: false&#xd;
+        }&#xd;
+    ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${serverloyalty}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">uat-p-sms/api/v1/tickets/simulate</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${ticketSimulateToken}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Online Order Simulate Test Fragment" enabled="true"/>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Registrados (tabla REGISTRO)" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">contactIDs.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.group</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">externalID,contactID,email</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Simulate Online Order" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;orderPayConditions&quot;:{&#xd;
+      &quot;amounts&quot;:{&#xd;
+         &quot;amount&quot;:[&#xd;
+            {&#xd;
+               &quot;concept&quot;:&quot;TotalAmount&quot;,&#xd;
+               &quot;value&quot;:59.99,&#xd;
+               &quot;currency&quot;:&quot;EUR&quot;&#xd;
+            }&#xd;
+         ]&#xd;
+      }&#xd;
+   },&#xd;
+   &quot;orderCustomerInfo&quot;:{&#xd;
+      &quot;idCustomer&quot;:&quot;${contactID}&quot;,&#xd;
+      &quot;externalCustomerId&quot;:&quot;${contactID}&quot;&#xd;
+   },&#xd;
+   &quot;orderBasicInfo&quot;:{&#xd;
+      &quot;orderCode&quot;:&quot;1&quot;,&#xd;
+      &quot;orderDate&quot;:&quot;20221011&quot;,&#xd;
+      &quot;currency&quot;:&quot;EUR&quot;,&#xd;
+      &quot;locationId&quot;:2100000000&#xd;
+   },&#xd;
+   &quot;orderDetail&quot;:[&#xd;
+      {&#xd;
+         &quot;line&quot;:&quot;1&quot;,&#xd;
+         &quot;lineId&quot;:&quot;1&quot;,&#xd;
+         &quot;item&quot;:{&#xd;
+            &quot;model&quot;:&quot;170763232323&quot;,&#xd;
+            &quot;unitPrice&quot;:29.99&#xd;
+         },&#xd;
+         &quot;quantity&quot;:1,&#xd;
+         &quot;discount&quot;:0.0,&#xd;
+         &quot;realAmount&quot;:29.99&#xd;
+      },&#xd;
+      {&#xd;
+         &quot;line&quot;:&quot;2&quot;,&#xd;
+         &quot;lineId&quot;:&quot;2&quot;,&#xd;
+         &quot;item&quot;:{&#xd;
+            &quot;model&quot;:&quot;17076323&quot;,&#xd;
+            &quot;unitPrice&quot;:29.99&#xd;
+         },&#xd;
+         &quot;quantity&quot;:1,&#xd;
+         &quot;discount&quot;:0.0,&#xd;
+         &quot;realAmount&quot;:29.99&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;redeemLikes&quot;:true,&#xd;
+   &quot;anonymousSimulation&quot;:false&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${serverloyalty}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/uat-p-loyal/salesOrder/simulate</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${orderSimulateToken}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <stringProp name="RespTimeGraph.interval">100</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Ver Árbol de Resultados" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

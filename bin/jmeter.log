@@ -1,0 +1,1261 @@
+2023-09-21 11:35:24,588 INFO o.a.j.u.JMeterUtils: Setting Locale to en
+2023-09-21 11:35:24,614 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2023-09-21 11:35:24,615 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2023-09-21 11:35:24,625 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2023-09-21 11:35:24,625 INFO o.a.j.JMeter: Version 5.5
+2023-09-21 11:35:24,625 INFO o.a.j.JMeter: java.version=17.0.2
+2023-09-21 11:35:24,625 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2023-09-21 11:35:24,625 INFO o.a.j.JMeter: os.name=Windows 10
+2023-09-21 11:35:24,625 INFO o.a.j.JMeter: os.arch=amd64
+2023-09-21 11:35:24,625 INFO o.a.j.JMeter: os.version=10.0
+2023-09-21 11:35:24,625 INFO o.a.j.JMeter: file.encoding=Cp1252
+2023-09-21 11:35:24,625 INFO o.a.j.JMeter: java.awt.headless=null
+2023-09-21 11:35:24,626 INFO o.a.j.JMeter: Max memory     =4267704320
+2023-09-21 11:35:24,626 INFO o.a.j.JMeter: Available Processors =8
+2023-09-21 11:35:24,637 INFO o.a.j.JMeter: Default Locale=español (España)
+2023-09-21 11:35:24,637 INFO o.a.j.JMeter: JMeter  Locale=inglés
+2023-09-21 11:35:24,637 INFO o.a.j.JMeter: JMeterHome=C:\Users\jorge.muñoz\Programas\apache-jmeter-5.5
+2023-09-21 11:35:24,637 INFO o.a.j.JMeter: user.dir  =C:\Users\jorge.muñoz\Programas\apache-jmeter-5.5\bin
+2023-09-21 11:35:24,638 INFO o.a.j.JMeter: PWD       =C:\Users\jorge.muñoz\Programas\apache-jmeter-5.5\bin
+2023-09-21 11:35:24,639 INFO o.a.j.JMeter: IP: 172.28.8.106 Name: BCN-CLI-P156 FullName: BCN-CLI-P156
+2023-09-21 11:35:24,657 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2023-09-21 11:35:24,994 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.SolarizedLightTheme
+2023-09-21 11:35:28,191 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_10-3e2b702f6c6768d137eb736d0283d77e-gui
+2023-09-21 11:35:30,647 INFO o.j.r.PluginManager: Plugins Status: [jpgc-json=2.7, jpgc-plugins-manager=1.7, jmeter-core=5.5, jmeter-ftp=5.5, jmeter-http=5.5, jmeter-jdbc=5.5, jmeter-jms=5.5, jmeter-junit=5.5, jmeter-java=5.5, jmeter-ldap=5.5, jmeter-mail=5.5, jmeter-mongodb=5.5, jmeter-native=5.5, jmeter-tcp=5.5, jmeter-components=5.5]
+2023-09-21 11:35:30,648 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-plugins-manager]
+2023-09-21 11:35:34,412 INFO o.a.j.s.FileServer: Default base='C:\Users\jorge.muñoz\Programas\apache-jmeter-5.5\bin'
+2023-09-21 11:35:34,415 INFO o.a.j.g.a.Load: Loading file: C:\Users\jorge.muñoz\Programas\apache-jmeter-5.5\scripts\LoyaltyStress\TestPlanBF2023_V1.jmx
+2023-09-21 11:35:34,416 INFO o.a.j.s.FileServer: Set new base='C:\Users\jorge.muñoz\Programas\apache-jmeter-5.5\scripts\LoyaltyStress'
+2023-09-21 11:35:34,583 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-09-21 11:35:34,589 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-09-21 11:35:34,591 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-09-21 11:35:34,592 INFO o.a.j.s.SaveService: Loading file: C:\Users\jorge.muñoz\Programas\apache-jmeter-5.5\scripts\LoyaltyStress\TestPlanBF2023_V1.jmx
+2023-09-21 11:35:34,804 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-09-21 11:35:34,804 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-09-21 11:35:34,804 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-09-21 11:35:34,804 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-09-21 11:35:34,805 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-09-21 11:35:34,805 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2023-09-21 11:35:35,936 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2023-09-21 11:35:35,936 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2023-09-21 11:35:35,937 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2023-09-21 11:35:35,937 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2023-09-21 11:35:36,095 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2023-09-21 11:35:36,189 INFO o.a.j.s.FileServer: Set new base='C:\Users\jorge.muñoz\Programas\apache-jmeter-5.5\scripts\LoyaltyStress'
+2023-09-21 11:37:02,372 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 11:37:02,372 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 11:37:02,372 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 11:37:02,373 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2023-09-21 11:37:02,373 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2023-09-21 11:37:02,428 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 11:37:02,468 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 11:37:02,468 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 11:37:02,468 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 11:37:02,469 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 11:37:02,472 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 11:37:02,472 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 11:37:02,478 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:37:02,481 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@440170068
+2023-09-21 11:37:02,488 INFO o.a.j.p.h.s.HTTPJavaImpl: Maximum connection retries = 0
+2023-09-21 11:37:08,246 INFO o.a.j.s.FileServer: Stored: idcustomersloyalty.csv Alias: idcustomersloyalty.csv@440170068
+2023-09-21 11:37:08,507 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 11:37:08,507 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 11:37:08,507 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2023-09-21 11:37:08,510 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2023-09-21 11:37:08,510 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2023-09-21 11:37:08,515 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2023-09-21 11:37:08,516 INFO o.a.j.u.SSLManager: KeyStore created OK
+2023-09-21 11:37:08,516 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2023-09-21 11:37:10,359 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@440170068
+2023-09-21 11:37:12,279 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@440170068
+2023-09-21 11:37:15,158 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:37:15,158 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:37:15,159 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 11:37:15,160 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@440170068
+2023-09-21 11:37:15,160 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@440170068
+2023-09-21 11:37:15,161 INFO o.a.j.s.FileServer: Close: registrados.csv@440170068
+2023-09-21 11:37:15,162 INFO o.a.j.s.FileServer: Close: idcustomersloyalty.csv@440170068
+2023-09-21 11:37:15,162 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 11:38:22,500 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 11:38:22,501 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 11:38:22,504 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 11:38:22,545 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 11:38:22,545 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 11:38:22,545 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 11:38:22,545 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 11:38:22,546 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 11:38:22,547 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 11:38:22,551 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:38:22,552 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@1501805545
+2023-09-21 11:38:24,276 INFO o.a.j.s.FileServer: Stored: idcustomersloyalty.csv Alias: idcustomersloyalty.csv@1501805545
+2023-09-21 11:38:24,346 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 11:38:24,347 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 11:38:24,347 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2023-09-21 11:38:26,033 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1501805545
+2023-09-21 11:38:26,988 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1501805545
+2023-09-21 11:38:28,542 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:38:28,542 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:38:28,542 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 11:38:28,543 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1501805545
+2023-09-21 11:38:28,543 INFO o.a.j.s.FileServer: Close: registrados.csv@1501805545
+2023-09-21 11:38:28,543 INFO o.a.j.s.FileServer: Close: idcustomersloyalty.csv@1501805545
+2023-09-21 11:38:28,544 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1501805545
+2023-09-21 11:38:28,544 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 11:40:42,573 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 11:40:42,573 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 11:40:42,577 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 11:40:42,618 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 11:40:42,618 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 11:40:42,618 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 11:40:42,618 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 11:40:42,620 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 11:40:42,620 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 11:40:42,621 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:40:42,622 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@373142436
+2023-09-21 11:40:43,906 INFO o.a.j.s.FileServer: Stored: idcustomersloyalty.csv Alias: idcustomersloyalty.csv@373142436
+2023-09-21 11:40:43,988 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 11:40:43,988 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 11:40:43,988 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2023-09-21 11:40:43,989 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@373142436
+2023-09-21 11:40:45,271 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@373142436
+2023-09-21 11:40:51,733 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:40:51,734 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:40:51,734 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 11:40:51,734 INFO o.a.j.s.FileServer: Close: registrados.csv@373142436
+2023-09-21 11:40:51,735 INFO o.a.j.s.FileServer: Close: idcustomersloyalty.csv@373142436
+2023-09-21 11:40:51,735 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@373142436
+2023-09-21 11:40:51,735 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@373142436
+2023-09-21 11:40:51,736 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 11:54:02,946 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 11:54:02,947 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 11:54:02,948 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 11:54:02,993 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 11:54:02,993 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 11:54:02,993 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 11:54:02,993 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 11:54:02,994 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 11:54:02,994 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 11:54:02,994 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:02,995 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1183114267
+2023-09-21 11:54:02,996 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1183114267
+2023-09-21 11:54:04,204 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:04,205 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:04,205 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 11:54:04,206 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1183114267
+2023-09-21 11:54:04,207 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1183114267
+2023-09-21 11:54:04,207 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 11:54:29,393 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 11:54:29,394 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 11:54:29,395 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 11:54:29,437 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 11:54:29,437 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 11:54:29,438 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 11:54:29,438 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 11:54:29,438 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 11:54:29,438 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 11:54:29,439 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:29,440 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@586195010
+2023-09-21 11:54:30,350 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@586195010
+2023-09-21 11:54:31,370 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:31,370 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:31,371 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 11:54:31,372 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@586195010
+2023-09-21 11:54:31,372 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@586195010
+2023-09-21 11:54:31,373 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 11:54:41,166 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 11:54:41,167 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 11:54:41,168 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 11:54:41,211 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 11:54:41,211 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 11:54:41,211 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 11:54:41,211 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 11:54:41,212 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 11:54:41,212 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 11:54:41,212 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:41,213 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@127580274
+2023-09-21 11:54:41,995 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@127580274
+2023-09-21 11:54:42,595 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:42,596 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:42,596 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 11:54:42,597 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@127580274
+2023-09-21 11:54:42,597 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@127580274
+2023-09-21 11:54:42,598 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 11:54:43,049 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 11:54:43,049 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 11:54:43,050 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 11:54:43,093 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 11:54:43,093 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 11:54:43,093 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 11:54:43,093 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 11:54:43,093 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 11:54:43,093 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 11:54:43,094 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:43,094 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1213276512
+2023-09-21 11:54:43,558 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1213276512
+2023-09-21 11:54:43,981 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:43,981 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:43,983 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 11:54:43,983 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1213276512
+2023-09-21 11:54:43,983 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1213276512
+2023-09-21 11:54:43,983 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 11:54:59,728 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 11:54:59,728 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 11:54:59,728 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 11:54:59,769 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 11:54:59,769 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 11:54:59,769 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 11:54:59,769 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 11:54:59,769 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 11:54:59,769 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 11:54:59,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:54:59,770 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@766375067
+2023-09-21 11:54:59,771 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@766375067
+2023-09-21 11:55:00,179 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:55:00,179 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 11:55:00,179 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 11:55:00,179 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@766375067
+2023-09-21 11:55:00,179 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@766375067
+2023-09-21 11:55:00,179 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:16:07,360 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:16:07,361 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:16:07,361 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:16:07,401 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 12:16:07,401 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:16:07,401 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:16:07,402 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:16:07,402 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:16:07,402 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:16:07,402 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:16:07,403 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@422558132
+2023-09-21 12:16:08,962 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@422558132
+2023-09-21 12:16:10,420 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:16:10,420 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:16:10,420 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:16:10,420 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@422558132
+2023-09-21 12:16:10,420 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@422558132
+2023-09-21 12:16:10,420 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:18:26,185 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:18:26,185 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:18:26,186 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:18:26,233 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 12:18:26,233 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:18:26,233 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:18:26,233 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:18:26,233 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:18:26,233 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:18:26,234 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:18:26,235 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1623422736
+2023-09-21 12:18:27,018 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1623422736
+2023-09-21 12:18:27,519 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:18:27,519 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:18:27,520 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:18:27,521 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1623422736
+2023-09-21 12:18:27,521 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1623422736
+2023-09-21 12:18:27,523 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:20:05,928 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:20:05,929 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:20:05,930 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:20:05,975 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 12:20:05,976 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:20:05,976 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:20:05,976 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:20:05,976 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:20:05,976 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:20:05,976 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:20:05,977 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1334549762
+2023-09-21 12:20:06,749 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1334549762
+2023-09-21 12:20:07,102 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:20:07,102 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:20:07,102 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:20:07,102 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1334549762
+2023-09-21 12:20:07,102 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1334549762
+2023-09-21 12:20:07,102 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:20:53,570 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:20:53,570 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:20:53,572 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:20:53,617 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 12:20:53,617 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:20:53,617 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:20:53,617 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:20:53,617 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:20:53,617 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:20:53,618 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:20:53,618 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@2030875334
+2023-09-21 12:20:54,782 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@2030875334
+2023-09-21 12:20:55,837 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:20:55,838 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:20:55,839 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:20:55,839 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@2030875334
+2023-09-21 12:20:55,840 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@2030875334
+2023-09-21 12:20:55,840 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:24:50,240 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:24:50,240 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:24:50,241 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:24:50,285 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 12:24:50,285 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:24:50,285 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:24:50,285 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:24:50,285 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:24:50,285 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:24:50,286 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:24:50,286 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1688500462
+2023-09-21 12:24:51,651 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1688500462
+2023-09-21 12:24:53,113 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:24:53,113 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:24:53,113 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:24:53,113 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1688500462
+2023-09-21 12:24:53,113 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1688500462
+2023-09-21 12:24:53,113 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:25:54,097 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:25:54,098 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:25:54,099 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:25:54,141 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Threads PDP Bolsa vacia Apps
+2023-09-21 12:25:54,141 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Threads PDP Bolsa vacia Apps.
+2023-09-21 12:25:54,141 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:25:54,141 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=60 delayedStart=false
+2023-09-21 12:25:54,142 ERROR o.a.j.u.JMeterUtils: Error occurred starting thread group :Threads PDP Bolsa vacia Apps, error message:ModuleController:PDP Bolsa vacia Apps has no selected Controller (did you rename some element in the path to target controller?), test was shutdown as a consequence, 
+see log file for more details
+org.apache.jorphan.util.JMeterStopTestException: ModuleController:PDP Bolsa vacia Apps has no selected Controller (did you rename some element in the path to target controller?), test was shutdown as a consequence
+	at org.apache.jmeter.control.ModuleController.resolveReplacementSubTree(ModuleController.java:143) ~[ApacheJMeter_components.jar:5.5]
+	at org.apache.jmeter.control.ModuleController.restoreSelected(ModuleController.java:126) ~[ApacheJMeter_components.jar:5.5]
+	at org.apache.jmeter.control.ModuleController.clone(ModuleController.java:70) ~[ApacheJMeter_components.jar:5.5]
+	at org.apache.jmeter.engine.TreeCloner.addNodeToTree(TreeCloner.java:76) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.engine.TreeCloner.addNode(TreeCloner.java:63) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jorphan.collections.HashTree.traverseInto(HashTree.java:993) ~[jorphan.jar:5.5]
+	at org.apache.jorphan.collections.HashTree.traverse(HashTree.java:976) ~[jorphan.jar:5.5]
+	at org.apache.jmeter.threads.AbstractThreadGroup.cloneTree(AbstractThreadGroup.java:384) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.threads.ThreadGroup.startNewThread(ThreadGroup.java:261) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.threads.ThreadGroup.start(ThreadGroup.java:242) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.engine.StandardJMeterEngine.startThreadGroup(StandardJMeterEngine.java:541) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:466) ~[ApacheJMeter_core.jar:5.5]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2023-09-21 12:25:54,151 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Thread Group CHECK UNITARIO
+2023-09-21 12:25:54,151 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:25:54,151 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:25:54,151 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:25:54,152 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2023-09-21 12:25:54,152 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:25:54,153 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 2-1
+2023-09-21 12:25:54,153 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@1046683693
+2023-09-21 12:25:59,359 INFO o.a.j.s.FileServer: Stored: idcustomersloyalty.csv Alias: idcustomersloyalty.csv@1046683693
+2023-09-21 12:25:59,505 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 12:25:59,505 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 12:25:59,506 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2023-09-21 12:26:01,067 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1046683693
+2023-09-21 12:26:02,145 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1046683693
+2023-09-21 12:26:03,234 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 2-1
+2023-09-21 12:26:03,234 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 2-1
+2023-09-21 12:26:03,234 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:26:03,234 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1046683693
+2023-09-21 12:26:03,235 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1046683693
+2023-09-21 12:26:03,235 INFO o.a.j.s.FileServer: Close: idcustomersloyalty.csv@1046683693
+2023-09-21 12:26:03,235 INFO o.a.j.s.FileServer: Close: registrados.csv@1046683693
+2023-09-21 12:26:03,235 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:26:20,187 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:26:20,188 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:26:20,190 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:26:20,235 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Threads PDP Bolsa vacia Apps
+2023-09-21 12:26:20,236 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Threads PDP Bolsa vacia Apps.
+2023-09-21 12:26:20,236 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:26:20,236 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=60 delayedStart=false
+2023-09-21 12:26:20,237 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-1
+2023-09-21 12:26:20,237 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@360630953
+2023-09-21 12:26:20,239 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:26:20,239 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Thread Group CHECK UNITARIO
+2023-09-21 12:26:20,239 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:26:20,239 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:26:20,239 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:26:20,240 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2023-09-21 12:26:20,240 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:26:20,241 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 2-1
+2023-09-21 12:26:20,241 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@1352833901
+2023-09-21 12:26:20,264 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 28286 timings (Precise Throughput Timer 28286 required, rate 7.857142857142857, duration 3600) in 11 ms. First 15 events will be fired at: 0.12667666768151342 (+0.12667666768151342), 0.15769125585238797 (+0.031014588170874546), 0.16026424259325545 (+0.002572986740867478), 0.2775641613562474 (+0.11729991876299195), 0.30125569261745255 (+0.023691531261205157), 0.42498507285007037 (+0.12372938023261781), 0.4453305072888547 (+0.020345434438784338), 0.4525060228553812 (+0.007175515566526514), 0.6601424406931677 (+0.20763641783778652), 0.7493476074733163 (+0.08920516678014856), 1.1633415549107795 (+0.4139939474374632), 1.2544084209604733 (+0.09106686604969383), 1.2579149378373344 (+0.003506516876861099), 1.2582009638254288 (+2.8602598809435165E-4), 1.3375460922969484 (+0.07934512847151964)
+2023-09-21 12:26:21,679 INFO o.a.j.s.FileServer: Stored: idcustomersloyalty.csv Alias: idcustomersloyalty.csv@1352833901
+2023-09-21 12:26:21,743 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 12:26:21,743 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 12:26:21,743 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2023-09-21 12:26:23,067 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1352833901
+2023-09-21 12:26:24,022 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1352833901
+2023-09-21 12:26:25,114 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 2-1
+2023-09-21 12:26:25,114 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 2-1
+2023-09-21 12:26:25,672 INFO o.a.j.g.a.Start: Stopping test
+2023-09-21 12:26:25,691 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-2
+2023-09-21 12:26:25,691 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-7
+2023-09-21 12:26:25,691 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-3
+2023-09-21 12:26:25,691 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-1
+2023-09-21 12:26:25,691 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa vacia Apps 1-1 sampler: PDP Bolsa vacia Apps
+2023-09-21 12:26:25,691 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-7
+2023-09-21 12:26:25,691 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-3
+2023-09-21 12:26:25,691 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-2
+2023-09-21 12:26:25,691 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-7
+2023-09-21 12:26:25,691 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-2
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-4
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-3
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-6
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-9
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-10
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-4
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-6
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-8
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-10
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-5
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-9
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-4
+2023-09-21 12:26:25,692 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-10
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-6
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-8
+2023-09-21 12:26:25,692 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-5
+2023-09-21 12:26:25,692 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-9
+2023-09-21 12:26:25,693 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-8
+2023-09-21 12:26:25,693 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-5
+2023-09-21 12:26:25,694 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-1
+2023-09-21 12:26:25,694 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:26:25,694 INFO o.a.j.s.FileServer: Close: registrados.csv@1352833901
+2023-09-21 12:26:25,694 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@360630953
+2023-09-21 12:26:25,694 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1352833901
+2023-09-21 12:26:25,694 INFO o.a.j.s.FileServer: Close: idcustomersloyalty.csv@1352833901
+2023-09-21 12:26:25,694 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1352833901
+2023-09-21 12:26:25,694 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:26:59,583 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:26:59,583 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:26:59,585 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:26:59,589 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Threads PDP Bolsa vacia Apps
+2023-09-21 12:26:59,589 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Threads PDP Bolsa vacia Apps.
+2023-09-21 12:26:59,589 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:26:59,589 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=60 delayedStart=false
+2023-09-21 12:26:59,591 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-1
+2023-09-21 12:26:59,591 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@347212082
+2023-09-21 12:26:59,593 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:26:59,593 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Thread Group CHECK UNITARIO
+2023-09-21 12:26:59,593 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:26:59,593 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:26:59,594 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:26:59,594 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2023-09-21 12:26:59,594 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:26:59,595 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 2-1
+2023-09-21 12:26:59,595 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@1705815772
+2023-09-21 12:26:59,602 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 28286 timings (Precise Throughput Timer 28286 required, rate 7.857142857142857, duration 3600) in 10 ms. First 15 events will be fired at: 0.09100144093516782 (+0.09100144093516782), 0.34440748170103674 (+0.2534060407658689), 0.5091594337607308 (+0.16475195205969406), 0.5624453362627513 (+0.05328590250202048), 0.7307252760520022 (+0.16827993978925093), 0.7678747882788439 (+0.03714951222684171), 0.8784421766566464 (+0.11056738837780244), 1.1098496888809262 (+0.2314075122242798), 1.203754882334529 (+0.09390519345360282), 1.5599244069911755 (+0.35616952465664653), 1.613053100659645 (+0.053128693668469396), 1.6320433242868582 (+0.018990223627213254), 1.958084637026225 (+0.3260413127393669), 2.109776290173171 (+0.15169165314694588), 2.1919679381979584 (+0.08219164802478751)
+2023-09-21 12:27:00,630 INFO o.a.j.s.FileServer: Stored: idcustomersloyalty.csv Alias: idcustomersloyalty.csv@1705815772
+2023-09-21 12:27:00,700 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 12:27:00,700 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 12:27:00,700 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2023-09-21 12:27:01,931 INFO o.a.j.g.a.Start: Stopping test
+2023-09-21 12:27:01,949 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-2
+2023-09-21 12:27:01,949 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-5
+2023-09-21 12:27:01,949 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-10
+2023-09-21 12:27:01,949 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-3
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-6
+2023-09-21 12:27:01,949 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-2
+2023-09-21 12:27:01,949 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-10
+2023-09-21 12:27:01,949 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-5
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-1
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-3
+2023-09-21 12:27:01,950 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa vacia Apps 1-1 sampler: PDP Bolsa vacia Apps
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-2
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-6
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-5
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-10
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-8
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-4
+2023-09-21 12:27:01,951 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-7
+2023-09-21 12:27:01,950 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-3
+2023-09-21 12:27:01,951 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-9
+2023-09-21 12:27:01,951 INFO o.a.j.t.JMeterThread: Stopping: Thread Group CHECK UNITARIO 2-1
+2023-09-21 12:27:01,951 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-6
+2023-09-21 12:27:01,951 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 12:27:01,951 WARN o.a.j.t.JMeterThread: Interrupting: Thread Group CHECK UNITARIO 2-1 sampler: PDP Bolsa vacia Web
+2023-09-21 12:27:01,951 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 12:27:01,951 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-8
+2023-09-21 12:27:01,951 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-4
+2023-09-21 12:27:01,951 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-7
+2023-09-21 12:27:01,952 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-4
+2023-09-21 12:27:01,952 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-8
+2023-09-21 12:27:01,952 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-7
+2023-09-21 12:27:01,952 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-9
+2023-09-21 12:27:01,953 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-9
+2023-09-21 12:27:01,953 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-1
+2023-09-21 12:27:01,953 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 12:27:01,953 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 12:27:01,955 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1705815772
+2023-09-21 12:27:01,956 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 2-1
+2023-09-21 12:27:01,957 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:27:01,957 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@347212082
+2023-09-21 12:27:01,957 INFO o.a.j.s.FileServer: Close: registrados.csv@1705815772
+2023-09-21 12:27:01,957 INFO o.a.j.s.FileServer: Close: idcustomersloyalty.csv@1705815772
+2023-09-21 12:27:01,957 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1705815772
+2023-09-21 12:27:01,957 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:27:12,947 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:27:12,948 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:27:12,948 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:27:12,989 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Threads PDP Bolsa vacia Apps
+2023-09-21 12:27:12,989 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Threads PDP Bolsa vacia Apps.
+2023-09-21 12:27:12,989 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:27:12,989 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=60 delayedStart=false
+2023-09-21 12:27:12,990 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-1
+2023-09-21 12:27:12,990 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1655428481
+2023-09-21 12:27:12,992 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:27:12,993 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:27:12,995 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 28286 timings (Precise Throughput Timer 28286 required, rate 7.857142857142857, duration 3600) in 4 ms. First 15 events will be fired at: 0.1632677288721407 (+0.1632677288721407), 0.3618442464151439 (+0.1985765175430032), 0.3702740083959988 (+0.008429761980854877), 0.4003316678138358 (+0.030057659417837), 0.4528344340931856 (+0.0525027662793498), 0.5154889797073015 (+0.06265454561411588), 0.5895867870763905 (+0.074097807369089), 0.6057410334305846 (+0.016154246354194157), 0.618299033653491 (+0.01255800022290643), 0.7074492398831289 (+0.08915020622963787), 0.7500226828013545 (+0.042573442918225624), 0.7764733052956441 (+0.026450622494289533), 0.8265798389099022 (+0.0501065336142581), 0.8892821714632237 (+0.06270233255332158), 1.1768241542189806 (+0.2875419827557568)
+2023-09-21 12:27:18,990 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-2
+2023-09-21 12:27:24,990 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-3
+2023-09-21 12:27:25,318 INFO o.a.j.g.a.Start: Stopping test
+2023-09-21 12:27:25,330 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-4
+2023-09-21 12:27:25,330 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-5
+2023-09-21 12:27:25,330 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-1
+2023-09-21 12:27:25,331 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa vacia Apps 1-1 sampler: PDP Bolsa vacia Apps
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-4
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-5
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-9
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-4
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-5
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-7
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-9
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-2
+2023-09-21 12:27:25,331 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa vacia Apps 1-2 sampler: PDP Bolsa vacia Apps
+2023-09-21 12:27:25,331 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-7
+2023-09-21 12:27:25,331 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-9
+2023-09-21 12:27:25,331 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 12:27:25,332 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-3
+2023-09-21 12:27:25,332 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-7
+2023-09-21 12:27:25,332 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa vacia Apps 1-3 sampler: PDP Bolsa vacia Apps
+2023-09-21 12:27:25,332 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-6
+2023-09-21 12:27:25,332 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-8
+2023-09-21 12:27:25,332 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 12:27:25,332 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 12:27:25,332 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 1-10
+2023-09-21 12:27:25,332 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 12:27:25,332 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-6
+2023-09-21 12:27:25,332 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 12:27:25,332 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-8
+2023-09-21 12:27:25,332 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 1-10
+2023-09-21 12:27:25,333 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-6
+2023-09-21 12:27:25,333 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-8
+2023-09-21 12:27:25,333 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-10
+2023-09-21 12:27:25,333 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-1
+2023-09-21 12:27:25,333 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-2
+2023-09-21 12:27:25,333 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 1-3
+2023-09-21 12:27:25,334 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:27:25,334 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1655428481
+2023-09-21 12:27:25,334 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:28:30,487 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:28:30,488 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:28:30,488 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:28:30,532 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Threads PDP Bolsa llena Apps
+2023-09-21 12:28:30,532 INFO o.a.j.e.StandardJMeterEngine: Starting 8 threads for group Threads PDP Bolsa llena Apps.
+2023-09-21 12:28:30,532 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:28:30,532 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=8 ramp-up=60 delayedStart=false
+2023-09-21 12:28:30,533 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-1
+2023-09-21 12:28:30,533 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@62924863
+2023-09-21 12:28:30,535 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@62924863
+2023-09-21 12:28:30,535 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:28:30,535 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:28:30,537 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 21600 timings (Precise Throughput Timer 21600 required, rate 6.0, duration 3600) in 2 ms. First 15 events will be fired at: 0.15522063798369956 (+0.15522063798369956), 0.27046052976569257 (+0.11523989178199301), 0.4298978083556726 (+0.15943727858998002), 0.43464328902289573 (+0.004745480667223134), 0.5014716631634109 (+0.06682837414051512), 0.777812444242576 (+0.27634078107916515), 0.8833295552117093 (+0.1055171109691333), 1.0472345124227456 (+0.16390495721103626), 1.0723028451455896 (+0.025068332722844033), 1.117157580718997 (+0.04485473557340747), 1.1658974372089848 (+0.04873985648998769), 1.5784220729653242 (+0.41252463575633946), 1.653836600743519 (+0.0754145277781948), 1.672441667260527 (+0.018605066517007884), 1.9839076828746638 (+0.3114660156141369)
+2023-09-21 12:28:36,323 INFO o.a.j.g.a.Start: Stopping test
+2023-09-21 12:28:36,337 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-6
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-3
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-7
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-8
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-4
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-6
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-5
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-3
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-1
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-7
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-8
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-6
+2023-09-21 12:28:36,338 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa llena Apps 1-1 sampler: PDP Bolsa llena Apps
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-4
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-3
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-5
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-7
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-8
+2023-09-21 12:28:36,338 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-5
+2023-09-21 12:28:36,339 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-4
+2023-09-21 12:28:36,339 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-2
+2023-09-21 12:28:36,340 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-2
+2023-09-21 12:28:36,340 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 12:28:36,340 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 12:28:36,340 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-2
+2023-09-21 12:28:36,341 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-1
+2023-09-21 12:28:36,341 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:28:36,341 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@62924863
+2023-09-21 12:28:36,341 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@62924863
+2023-09-21 12:28:36,341 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:30:04,632 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:30:04,632 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:30:04,633 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:30:04,677 INFO o.a.j.e.StandardJMeterEngine: No enabled thread groups found
+2023-09-21 12:30:04,678 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:30:04,678 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:30:14,176 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:30:14,176 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:30:14,177 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:30:14,223 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 12:30:14,223 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:30:14,223 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:30:14,223 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:30:14,224 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:30:14,224 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:30:14,224 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:30:14,224 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@664349610
+2023-09-21 12:30:14,225 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@664349610
+2023-09-21 12:30:14,803 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:30:14,803 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:30:14,804 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:30:14,805 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@664349610
+2023-09-21 12:30:14,805 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@664349610
+2023-09-21 12:30:14,806 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:31:15,957 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:31:15,957 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:31:15,958 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:31:16,004 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Threads PDP Bolsa llena Apps
+2023-09-21 12:31:16,004 INFO o.a.j.e.StandardJMeterEngine: Starting 8 threads for group Threads PDP Bolsa llena Apps.
+2023-09-21 12:31:16,004 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:31:16,004 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=8 ramp-up=60 delayedStart=false
+2023-09-21 12:31:16,005 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-1
+2023-09-21 12:31:16,005 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@420167632
+2023-09-21 12:31:16,006 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@420167632
+2023-09-21 12:31:16,006 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:31:16,007 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:31:16,008 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 21600 timings (Precise Throughput Timer 21600 required, rate 6.0, duration 3600) in 1 ms. First 15 events will be fired at: 0.16012196787125177 (+0.16012196787125177), 0.3039303871269272 (+0.14380841925567545), 0.3849594693456915 (+0.08102908221876426), 0.40872962535041246 (+0.023770156004720988), 0.5553291481983358 (+0.14659952284792332), 0.6416545571183097 (+0.08632540891997387), 0.6597804515836803 (+0.018125894465370607), 0.7686207331886852 (+0.10884028160500492), 0.8531480291497306 (+0.08452729596104547), 0.8558368488174484 (+0.0026888196677177234), 0.8607576835479414 (+0.0049208347304929845), 1.50616348168926 (+0.6454057981413186), 1.6658567381809153 (+0.15969325649165533), 1.7174036577005225 (+0.051546919519607215), 1.9251931293915003 (+0.20778947169097783)
+2023-09-21 12:31:22,619 INFO o.a.j.g.a.Start: Stopping test
+2023-09-21 12:31:22,630 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-8
+2023-09-21 12:31:22,630 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-6
+2023-09-21 12:31:22,630 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-4
+2023-09-21 12:31:22,630 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-7
+2023-09-21 12:31:22,630 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-1
+2023-09-21 12:31:22,630 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-6
+2023-09-21 12:31:22,630 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-8
+2023-09-21 12:31:22,630 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa llena Apps 1-1 sampler: PDP Bolsa llena Apps
+2023-09-21 12:31:22,630 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-4
+2023-09-21 12:31:22,630 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-7
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-6
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-8
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-4
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-7
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-3
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-2
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 1-5
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-3
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-2
+2023-09-21 12:31:22,631 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 1-5
+2023-09-21 12:31:22,632 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 12:31:22,632 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-3
+2023-09-21 12:31:22,632 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-2
+2023-09-21 12:31:22,632 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 12:31:22,632 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-5
+2023-09-21 12:31:22,633 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 1-1
+2023-09-21 12:31:22,633 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:31:22,633 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@420167632
+2023-09-21 12:31:22,633 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@420167632
+2023-09-21 12:31:22,633 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 12:33:06,689 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 12:33:06,689 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 12:33:06,690 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 12:33:06,736 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 12:33:06,736 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 12:33:06,736 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 12:33:06,736 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 12:33:06,737 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 12:33:06,737 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 12:33:06,737 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:33:06,737 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1677962440
+2023-09-21 12:33:06,738 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1677962440
+2023-09-21 12:33:07,245 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:33:07,245 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 12:33:07,245 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 12:33:07,245 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1677962440
+2023-09-21 12:33:07,245 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1677962440
+2023-09-21 12:33:07,246 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 13:02:45,289 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 13:02:45,289 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 13:02:45,289 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 13:02:45,390 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 13:02:45,390 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 13:02:45,390 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:02:45,390 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 13:02:45,391 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 13:02:45,391 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 13:02:45,391 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:02:45,392 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@991846211
+2023-09-21 13:02:45,393 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@991846211
+2023-09-21 13:02:46,767 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:02:46,767 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:02:46,767 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 13:02:46,768 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@991846211
+2023-09-21 13:02:46,768 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@991846211
+2023-09-21 13:02:46,768 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 13:04:04,238 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 13:04:04,239 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 13:04:04,239 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 13:04:04,284 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 13:04:04,284 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 13:04:04,284 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:04:04,284 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 13:04:04,284 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 13:04:04,284 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 13:04:04,285 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:04,285 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1523736630
+2023-09-21 13:04:05,144 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1523736630
+2023-09-21 13:04:06,219 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:06,219 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:06,219 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 13:04:06,219 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1523736630
+2023-09-21 13:04:06,220 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1523736630
+2023-09-21 13:04:06,220 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 13:04:31,666 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 13:04:31,666 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 13:04:31,667 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 13:04:31,739 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 13:04:31,739 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 13:04:31,739 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:04:31,739 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 13:04:31,740 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 13:04:31,740 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 13:04:31,740 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:31,741 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1753614696
+2023-09-21 13:04:32,348 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1753614696
+2023-09-21 13:04:32,756 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:32,756 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:32,756 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 13:04:32,756 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1753614696
+2023-09-21 13:04:32,757 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1753614696
+2023-09-21 13:04:32,757 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 13:04:33,141 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 13:04:33,141 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 13:04:33,143 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 13:04:33,197 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 13:04:33,197 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 13:04:33,197 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:04:33,197 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 13:04:33,197 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 13:04:33,197 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 13:04:33,198 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:33,198 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1219227275
+2023-09-21 13:04:33,580 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1219227275
+2023-09-21 13:04:33,825 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:33,825 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:33,825 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 13:04:33,825 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1219227275
+2023-09-21 13:04:33,826 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1219227275
+2023-09-21 13:04:33,826 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 13:04:34,205 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 13:04:34,205 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 13:04:34,205 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 13:04:34,260 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 13:04:34,260 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 13:04:34,260 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:04:34,260 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 13:04:34,260 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 13:04:34,260 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 13:04:34,261 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:34,261 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1486639629
+2023-09-21 13:04:34,640 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1486639629
+2023-09-21 13:04:34,964 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:34,964 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:34,965 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 13:04:34,965 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1486639629
+2023-09-21 13:04:34,966 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1486639629
+2023-09-21 13:04:34,966 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 13:04:35,324 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 13:04:35,325 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 13:04:35,326 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 13:04:35,382 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 13:04:35,382 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 13:04:35,382 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:04:35,382 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 13:04:35,382 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 13:04:35,382 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 13:04:35,382 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:35,383 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1894833807
+2023-09-21 13:04:35,724 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1894833807
+2023-09-21 13:04:35,994 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:35,994 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:35,994 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 13:04:35,994 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1894833807
+2023-09-21 13:04:35,994 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1894833807
+2023-09-21 13:04:35,994 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 13:04:36,352 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 13:04:36,352 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 13:04:36,353 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 13:04:36,408 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 13:04:36,408 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 13:04:36,408 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:04:36,408 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 13:04:36,409 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 13:04:36,409 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 13:04:36,409 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:36,410 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1330763721
+2023-09-21 13:04:36,731 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1330763721
+2023-09-21 13:04:37,027 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:37,028 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:04:37,028 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 13:04:37,028 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1330763721
+2023-09-21 13:04:37,028 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1330763721
+2023-09-21 13:04:37,028 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 13:05:00,309 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 13:05:00,309 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 13:05:00,310 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 13:05:00,363 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group CHECK UNITARIO
+2023-09-21 13:05:00,363 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group CHECK UNITARIO.
+2023-09-21 13:05:00,363 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:05:00,363 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-09-21 13:05:00,363 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 13:05:00,363 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 13:05:00,364 INFO o.a.j.t.JMeterThread: Thread started: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:05:00,364 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@118005257
+2023-09-21 13:05:00,774 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@118005257
+2023-09-21 13:05:01,434 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:05:01,434 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group CHECK UNITARIO 1-1
+2023-09-21 13:05:01,434 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 13:05:01,434 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@118005257
+2023-09-21 13:05:01,434 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@118005257
+2023-09-21 13:05:01,435 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-09-21 13:14:10,960 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-09-21 13:14:10,960 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-09-21 13:14:10,962 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-09-21 13:14:11,010 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Threads CUSTOMER Get Loyalty Info Undiscard
+2023-09-21 13:14:11,010 INFO o.a.j.e.StandardJMeterEngine: Starting 12 threads for group Threads CUSTOMER Get Loyalty Info Undiscard.
+2023-09-21 13:14:11,010 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,010 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=12 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,011 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-1
+2023-09-21 13:14:11,012 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@928612964
+2023-09-21 13:14:11,014 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-09-21 13:14:11,014 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Threads CUSTOMER Get Loyalty Info Discard Service
+2023-09-21 13:14:11,014 INFO o.a.j.e.StandardJMeterEngine: Starting 7 threads for group Threads CUSTOMER Get Loyalty Info Discard Service.
+2023-09-21 13:14:11,014 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,014 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=7 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,015 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Discard Service 2-1
+2023-09-21 13:14:11,015 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@1088405701
+2023-09-21 13:14:11,016 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2023-09-21 13:14:11,016 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : Threads CUSTOMER Modify Data with Previous Email
+2023-09-21 13:14:11,016 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Threads CUSTOMER Modify Data with Previous Email.
+2023-09-21 13:14:11,016 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,016 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=2 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,017 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2023-09-21 13:14:11,017 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Modify Data with Previous Email 3-1
+2023-09-21 13:14:11,017 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : Threads LOYALTY Simulate Bag
+2023-09-21 13:14:11,017 INFO o.a.j.e.StandardJMeterEngine: Starting 6 threads for group Threads LOYALTY Simulate Bag.
+2023-09-21 13:14:11,018 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,018 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=6 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,018 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@661386679
+2023-09-21 13:14:11,018 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Simulate Bag 4-1
+2023-09-21 13:14:11,019 INFO o.a.j.s.FileServer: Stored: registrados.csv Alias: registrados.csv@108839022
+2023-09-21 13:14:11,019 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 1026 timings (Precise Throughput Timer 1026 required, rate 0.285, duration 3600) in 0 ms. First 15 events will be fired at: 0.9892741209348355 (+0.9892741209348355), 1.4096110085941582 (+0.42033688765932276), 1.88613492612264 (+0.4765239175284819), 7.20033845442809 (+5.31420352830545), 10.91805315090486 (+3.7177146964767704), 11.173486334291294 (+0.25543318338643317), 22.562965794293266 (+11.389479460001972), 24.971014741918207 (+2.408048947624941), 26.23071556365071 (+1.2597008217325012), 26.657550333939596 (+0.42683477028888817), 35.48780792611268 (+8.830257592173083), 40.68496910706134 (+5.197161180948662), 44.50965308326089 (+3.8246839761995517), 46.37669994442648 (+1.8670468611655835), 48.38237213333056 (+2.005672188904086)
+2023-09-21 13:14:11,019 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 24300 timings (Precise Throughput Timer 24300 required, rate 6.75, duration 3600) in 2 ms. First 15 events will be fired at: 0.13652723480750417 (+0.13652723480750417), 0.5343671177481024 (+0.39783988294059824), 0.6032618734644668 (+0.06889475571636439), 0.6606679524716608 (+0.057406079007193966), 0.6836818071232376 (+0.023013854651576793), 0.9089110032280079 (+0.22522919610477032), 0.9390870771464499 (+0.030176073918442015), 1.1687065800501273 (+0.22961950290367739), 1.1854032017205807 (+0.016696621670453382), 1.2502934831875478 (+0.06489028146696718), 1.2524653597445479 (+0.0021718765570000187), 1.4353886120975101 (+0.18292325235296225), 1.5966906247882218 (+0.16130201269071165), 1.7757150266167532 (+0.1790244018285314), 2.083683457819996 (+0.3079684312032427)
+2023-09-21 13:14:11,020 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 3240 timings (Precise Throughput Timer 3240 required, rate 0.9, duration 3600) in 0 ms. First 15 events will be fired at: 1.76609846646536 (+1.76609846646536), 2.410352647259195 (+0.6442541807938351), 2.8207985906604893 (+0.41044594340129414), 6.014565780442727 (+3.1937671897822373), 9.099443249772543 (+3.0848774693298164), 9.379649989661587 (+0.280206739889044), 10.190038959924497 (+0.8103889702629097), 10.978117261149567 (+0.7880783012250703), 13.138368606112971 (+2.160251344963404), 13.168219674688375 (+0.029851068575403872), 13.65479315851319 (+0.4865734838248148), 13.687154633259935 (+0.03236147474674489), 14.900261792803127 (+1.213107159543192), 15.411321418019241 (+0.5110596252161148), 16.297115002934824 (+0.8857935849155822)
+2023-09-21 13:14:11,020 INFO o.a.j.t.ThreadGroup: Started thread group number 4
+2023-09-21 13:14:11,020 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 5 : Threads LOYALTY Transactions
+2023-09-21 13:14:11,020 INFO o.a.j.e.StandardJMeterEngine: Starting 6 threads for group Threads LOYALTY Transactions.
+2023-09-21 13:14:11,020 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 61650 timings (Precise Throughput Timer 61650 required, rate 17.125, duration 3600) in 6 ms. First 15 events will be fired at: 0.06773414939211797 (+0.06773414939211797), 0.1079310485265772 (+0.04019689913445923), 0.12310958372570013 (+0.015178535199122933), 0.1282052121065469 (+0.005095628380846762), 0.19037029000830152 (+0.06216507790175463), 0.2338176826802929 (+0.04344739267199138), 0.3454868148882628 (+0.11166913220796992), 0.4002776536562891 (+0.05479083876802626), 0.4023081612119839 (+0.0020305075556947827), 0.5145756285330094 (+0.11226746732102555), 0.5880434399758716 (+0.07346781144286219), 0.5965657355830878 (+0.00852229560721618), 0.6560892432626808 (+0.059523507679593024), 0.8210577608870562 (+0.16496851762437537), 0.9191689632078504 (+0.09811120232079418)
+2023-09-21 13:14:11,020 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,020 INFO o.a.j.t.ThreadGroup: Starting thread group... number=5 threads=6 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,021 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Transactions 5-1
+2023-09-21 13:14:11,021 INFO o.a.j.s.FileServer: Stored: idcustomersloyalty.csv Alias: idcustomersloyalty.csv@520477738
+2023-09-21 13:14:11,023 INFO o.a.j.t.ThreadGroup: Started thread group number 5
+2023-09-21 13:14:11,023 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 6 : Threads PDP Web Mobile
+2023-09-21 13:14:11,023 INFO o.a.j.e.StandardJMeterEngine: Starting 12 threads for group Threads PDP Web Mobile.
+2023-09-21 13:14:11,023 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,023 INFO o.a.j.t.ThreadGroup: Starting thread group... number=6 threads=12 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,023 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 367 timings (Precise Throughput Timer 367 required, rate 0.101875, duration 3600) in 0 ms. First 15 events will be fired at: 4.647905970191335 (+4.647905970191335), 7.701359259640128 (+3.053453289448793), 15.292865773349273 (+7.591506513709145), 32.211004004884416 (+16.918138231535142), 47.6425379506324 (+15.431533945747987), 60.01810290472584 (+12.375564954093441), 77.4220744048499 (+17.40397150012405), 84.22363446028172 (+6.801560055431821), 85.12116425765596 (+0.8975297973742471), 86.40579296725197 (+1.2846287095960065), 100.66667469186119 (+14.26088172460922), 105.68489511808536 (+5.018220426224175), 110.95925365227868 (+5.274358534193311), 111.12985070529521 (+0.17059705301653594), 120.83125264527932 (+9.701401939984109)
+2023-09-21 13:14:11,023 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-1
+2023-09-21 13:14:11,026 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 14850 timings (Precise Throughput Timer 14850 required, rate 4.125, duration 3600) in 2 ms. First 15 events will be fired at: 0.21943644179733823 (+0.21943644179733823), 0.3318249847143129 (+0.11238854291697464), 0.742353069424162 (+0.41052808470984914), 0.820877030242606 (+0.07852396081844404), 1.0797066442397973 (+0.2588296139971913), 1.3050272079380587 (+0.22532056369826137), 1.9614754898667375 (+0.6564482819286788), 2.055052414791181 (+0.09357692492444336), 2.250916999783259 (+0.19586458499207815), 2.408076990757557 (+0.15715999097429822), 2.8759742518896125 (+0.4678972611320553), 3.2040003993315747 (+0.3280261474419621), 3.9631822928456018 (+0.7591818935140271), 4.049103490649397 (+0.08592119780379548), 4.121135884067018 (+0.07203239341762036)
+2023-09-21 13:14:11,026 INFO o.a.j.t.ThreadGroup: Started thread group number 6
+2023-09-21 13:14:11,027 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 7 : Threads PDP Bolsa vacia Web
+2023-09-21 13:14:11,027 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Threads PDP Bolsa vacia Web.
+2023-09-21 13:14:11,027 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,027 INFO o.a.j.t.ThreadGroup: Starting thread group... number=7 threads=10 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,027 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-1
+2023-09-21 13:14:11,028 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 583 timings (Precise Throughput Timer 583 required, rate 0.161875, duration 3600) in 0 ms. First 15 events will be fired at: 0.92028224567966 (+0.92028224567966), 19.060573009926074 (+18.140290764246416), 23.537136892991263 (+4.4765638830651895), 26.39974266096661 (+2.862605767975346), 30.32350856447774 (+3.923765903511132), 36.64462016859553 (+6.321111604117789), 40.06086733529304 (+3.4162471666975094), 40.86959178721439 (+0.8087244519213499), 42.51427329869122 (+1.6446815114768327), 44.2932713192227 (+1.7789980205314748), 48.22953581591425 (+3.9362644966915497), 78.43462106379664 (+30.205085247882394), 88.30304658356836 (+9.86842551977172), 89.17255851016716 (+0.869511926598804), 89.26806988374128 (+0.09551137357411221)
+2023-09-21 13:14:11,030 INFO o.a.j.t.ThreadGroup: Started thread group number 7
+2023-09-21 13:14:11,030 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 8 : Threads PDP Bolsa vacia Apps
+2023-09-21 13:14:11,030 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Threads PDP Bolsa vacia Apps.
+2023-09-21 13:14:11,030 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,030 INFO o.a.j.t.ThreadGroup: Starting thread group... number=8 threads=10 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,030 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-1
+2023-09-21 13:14:11,031 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@309781110
+2023-09-21 13:14:11,033 INFO o.a.j.t.ThreadGroup: Started thread group number 8
+2023-09-21 13:14:11,033 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 9 : Threads PDP TabSearch Apps
+2023-09-21 13:14:11,033 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Threads PDP TabSearch Apps.
+2023-09-21 13:14:11,033 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,033 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 9450 timings (Precise Throughput Timer 9450 required, rate 2.625, duration 3600) in 1 ms. First 15 events will be fired at: 0.5957542444432029 (+0.5957542444432029), 1.1289132390082113 (+0.5331589945650084), 2.263101603281825 (+1.134188364273614), 2.8426858278035816 (+0.5795842245217564), 2.944463009698284 (+0.1017771818947022), 2.959025637401602 (+0.014562627703318398), 2.9670424701280673 (+0.00801683272646514), 3.0804581660528907 (+0.11341569592482337), 4.284490103979088 (+1.2040319379261977), 5.103139424430259 (+0.8186493204511702), 5.387036484514729 (+0.28389706008447035), 5.461938233480712 (+0.07490174896598312), 5.526763627298825 (+0.06482539381811314), 5.550460773230359 (+0.023697145931533825), 5.714052493767996 (+0.16359172053763693)
+2023-09-21 13:14:11,033 INFO o.a.j.t.ThreadGroup: Starting thread group... number=9 threads=10 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,034 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-1
+2023-09-21 13:14:11,034 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@887846834
+2023-09-21 13:14:11,037 INFO o.a.j.t.ThreadGroup: Started thread group number 9
+2023-09-21 13:14:11,037 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 10 : Threads PDP Bolsa llena Web
+2023-09-21 13:14:11,037 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Threads PDP Bolsa llena Web.
+2023-09-21 13:14:11,037 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,037 INFO o.a.j.t.ThreadGroup: Starting thread group... number=10 threads=10 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,037 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 9450 timings (Precise Throughput Timer 9450 required, rate 2.625, duration 3600) in 1 ms. First 15 events will be fired at: 0.04997005904221474 (+0.04997005904221474), 1.6430789178722094 (+1.5931088588299946), 2.706850219216772 (+1.0637713013445627), 2.780769937642269 (+0.07391971842549694), 3.3148739688634077 (+0.5341040312211387), 3.442782025527702 (+0.12790805666429428), 4.066389481671173 (+0.6236074561434712), 4.532683922593073 (+0.4662944409218994), 5.420758196644204 (+0.8880742740511316), 5.732407514832261 (+0.3116493181880564), 6.077319235339607 (+0.344911720507346), 6.304883280940521 (+0.22756404560091426), 6.396232878731034 (+0.09134959779051322), 6.614510067043167 (+0.2182771883121326), 7.589262160901544 (+0.9747520938583776)
+2023-09-21 13:14:11,038 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-1
+2023-09-21 13:14:11,038 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@35672710
+2023-09-21 13:14:11,041 INFO o.a.j.t.ThreadGroup: Started thread group number 10
+2023-09-21 13:14:11,041 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 11 : Threads PDP Bolsa llena Apps
+2023-09-21 13:14:11,041 INFO o.a.j.e.StandardJMeterEngine: Starting 8 threads for group Threads PDP Bolsa llena Apps.
+2023-09-21 13:14:11,041 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-09-21 13:14:11,041 INFO o.a.j.t.ThreadGroup: Starting thread group... number=11 threads=8 ramp-up=60 delayedStart=false
+2023-09-21 13:14:11,042 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 10800 timings (Precise Throughput Timer 10800 required, rate 3.0, duration 3600) in 1 ms. First 15 events will be fired at: 3.725999996539997E-4 (+3.725999996539997E-4), 0.02319165669946166 (+0.02281905669980766), 0.0698651610816281 (+0.04667350438216644), 0.5157708587665955 (+0.44590569768496735), 0.6204296651531216 (+0.10465880638652614), 1.1184918819117318 (+0.4980622167586102), 1.2278099044619406 (+0.10931802255020884), 1.3166318397627386 (+0.08882193530079796), 1.5606288915994249 (+0.2439970518366863), 1.7875926813293308 (+0.22696378972990594), 1.856768647624918 (+0.06917596629558709), 2.0161539429044417 (+0.15938529527952383), 2.07964878738105 (+0.06349484447660814), 2.7259626077265953 (+0.6463138203455454), 3.033542610540385 (+0.30758000281378983)
+2023-09-21 13:14:11,042 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 11-1
+2023-09-21 13:14:11,042 INFO o.a.j.s.FileServer: Stored: products_stock_encryption.csv Alias: products_stock_encryption.csv@1414625551
+2023-09-21 13:14:11,043 INFO o.a.j.s.FileServer: Stored: user_ids_bolsa_vacia_web.csv Alias: user_ids_bolsa_vacia_web.csv@1414625551
+2023-09-21 13:14:11,044 INFO o.a.j.t.ThreadGroup: Started thread group number 11
+2023-09-21 13:14:11,044 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-09-21 13:14:11,045 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 9450 timings (Precise Throughput Timer 9450 required, rate 2.625, duration 3600) in 1 ms. First 15 events will be fired at: 0.08438954111951169 (+0.08438954111951169), 0.5494999003487155 (+0.46511035922920385), 0.7703880356658477 (+0.22088813531713214), 0.8183078964193236 (+0.047919860753475874), 1.8547519551387115 (+1.036444058719388), 3.1141819927121173 (+1.2594300375734058), 3.1282264802386717 (+0.014044487526554406), 3.1758235823887038 (+0.0475971021500321), 4.239609039522607 (+1.0637854571339034), 4.47604341866481 (+0.236434379142203), 4.770050875792853 (+0.29400745712804266), 5.31238864098742 (+0.5423377651945671), 5.689745991129769 (+0.37735735014234884), 5.915412922425434 (+0.22566693129566495), 6.06341810140405 (+0.14800517897861631)
+2023-09-21 13:14:15,677 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 13:14:15,677 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 13:14:15,677 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2023-09-21 13:14:16,011 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-2
+2023-09-21 13:14:16,024 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-2
+2023-09-21 13:14:17,029 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-2
+2023-09-21 13:14:17,032 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-2
+2023-09-21 13:14:17,034 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-2
+2023-09-21 13:14:17,039 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-2
+2023-09-21 13:14:18,543 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 11-2
+2023-09-21 13:14:18,722 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 13:14:18,722 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 13:14:18,722 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2023-09-21 13:14:19,587 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Discard Service 2-2
+2023-09-21 13:14:21,012 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-3
+2023-09-21 13:14:21,020 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Simulate Bag 4-2
+2023-09-21 13:14:21,021 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Transactions 5-2
+2023-09-21 13:14:21,025 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-3
+2023-09-21 13:14:23,029 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-3
+2023-09-21 13:14:23,031 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-3
+2023-09-21 13:14:23,033 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-3
+2023-09-21 13:14:23,038 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-3
+2023-09-21 13:14:26,012 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-4
+2023-09-21 13:14:26,024 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-4
+2023-09-21 13:14:26,041 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 11-3
+2023-09-21 13:14:26,321 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 13:14:26,321 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.io.IOException: Server returned HTTP response code: 401 for URL: http://loyalty.pre.mango.com/v2/transactions
+2023-09-21 13:14:26,321 INFO o.a.j.p.h.s.HTTPJavaImpl: Error Response Code: 401
+2023-09-21 13:14:26,845 INFO o.a.j.g.a.Start: Stopping test
+2023-09-21 13:14:26,863 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-3
+2023-09-21 13:14:26,863 WARN o.a.j.t.JMeterThread: Interrupting: Threads CUSTOMER Get Loyalty Info Undiscard 1-3 sampler: CUSTOMER Get Loyalty Info Undiscard
+2023-09-21 13:14:26,863 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-1
+2023-09-21 13:14:26,863 WARN o.a.j.t.JMeterThread: Interrupting: Threads CUSTOMER Get Loyalty Info Undiscard 1-1 sampler: CUSTOMER Get Loyalty Info Undiscard
+2023-09-21 13:14:26,863 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-6
+2023-09-21 13:14:26,863 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-10
+2023-09-21 13:14:26,863 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-12
+2023-09-21 13:14:26,863 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-7
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-4
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-10
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-6
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-12
+2023-09-21 13:14:26,864 WARN o.a.j.t.JMeterThread: Interrupting: Threads CUSTOMER Get Loyalty Info Undiscard 1-4 sampler: CUSTOMER Get Loyalty Info Undiscard
+2023-09-21 13:14:26,864 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-6
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-10
+2023-09-21 13:14:26,864 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-12
+2023-09-21 13:14:26,864 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-8
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-7
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-11
+2023-09-21 13:14:26,864 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-8
+2023-09-21 13:14:26,865 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-7
+2023-09-21 13:14:26,864 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,865 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-9
+2023-09-21 13:14:26,865 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,865 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-8
+2023-09-21 13:14:26,865 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-2
+2023-09-21 13:14:26,865 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,865 WARN o.a.j.t.JMeterThread: Interrupting: Threads CUSTOMER Get Loyalty Info Undiscard 1-2 sampler: CUSTOMER Get Loyalty Info Undiscard
+2023-09-21 13:14:26,865 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-11
+2023-09-21 13:14:26,866 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-11
+2023-09-21 13:14:26,866 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-1
+2023-09-21 13:14:26,866 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-3
+2023-09-21 13:14:26,866 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-9
+2023-09-21 13:14:26,866 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-9
+2023-09-21 13:14:26,866 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-4
+2023-09-21 13:14:26,866 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Undiscard 1-5
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Discard Service 2-2
+2023-09-21 13:14:26,867 WARN o.a.j.t.JMeterThread: Interrupting: Threads CUSTOMER Get Loyalty Info Discard Service 2-2 sampler: CUSTOMER Get Loyalty Info Discard
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Undiscard 1-5
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Discard Service 2-7
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-5
+2023-09-21 13:14:26,867 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,867 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Discard Service 2-7
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Discard Service 2-6
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Discard Service 2-5
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Discard Service 2-3
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Discard Service 2-7
+2023-09-21 13:14:26,867 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Discard Service 2-6
+2023-09-21 13:14:26,868 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,868 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Discard Service 2-6
+2023-09-21 13:14:26,867 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Discard Service 2-1
+2023-09-21 13:14:26,868 WARN o.a.j.t.JMeterThread: Interrupting: Threads CUSTOMER Get Loyalty Info Discard Service 2-1 sampler: CUSTOMER Get Loyalty Info Discard
+2023-09-21 13:14:26,868 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Discard Service 2-3
+2023-09-21 13:14:26,868 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Discard Service 2-5
+2023-09-21 13:14:26,868 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Undiscard 1-2
+2023-09-21 13:14:26,868 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Get Loyalty Info Discard Service 2-4
+2023-09-21 13:14:26,868 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Modify Data with Previous Email 3-2
+2023-09-21 13:14:26,868 INFO o.a.j.t.JMeterThread: Stopping: Threads CUSTOMER Modify Data with Previous Email 3-1
+2023-09-21 13:14:26,868 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Discard Service 2-2
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Simulate Bag 4-5
+2023-09-21 13:14:26,869 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Simulate Bag 4-4
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Simulate Bag 4-6
+2023-09-21 13:14:26,869 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Discard Service 2-3
+2023-09-21 13:14:26,869 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Simulate Bag 4-2
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Modify Data with Previous Email 3-1
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Simulate Bag 4-3
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Simulate Bag 4-1
+2023-09-21 13:14:26,869 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Discard Service 2-5
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Get Loyalty Info Discard Service 2-4
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Simulate Bag 4-5
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Simulate Bag 4-2
+2023-09-21 13:14:26,870 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Discard Service 2-1
+2023-09-21 13:14:26,870 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Get Loyalty Info Discard Service 2-4
+2023-09-21 13:14:26,870 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Simulate Bag 4-3
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Thread started: Threads CUSTOMER Modify Data with Previous Email 3-2
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Simulate Bag 4-4
+2023-09-21 13:14:26,869 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,870 INFO o.a.j.t.JMeterThread: Thread finished: Threads CUSTOMER Modify Data with Previous Email 3-2
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Transactions 5-5
+2023-09-21 13:14:26,869 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Simulate Bag 4-6
+2023-09-21 13:14:26,870 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Simulate Bag 4-1
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Simulate Bag 4-6
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Transactions 5-5
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Simulate Bag 4-5
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Simulate Bag 4-4
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Simulate Bag 4-3
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Transactions 5-4
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Transactions 5-5
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Transactions 5-3
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Transactions 5-1
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Transactions 5-2
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Stopping: Threads LOYALTY Transactions 5-6
+2023-09-21 13:14:26,871 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-12
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-4
+2023-09-21 13:14:26,871 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Transactions 5-4
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Transactions 5-1
+2023-09-21 13:14:26,872 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-12
+2023-09-21 13:14:26,871 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Web Mobile 6-4 sampler: PDP Web Mobile
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Transactions 5-3
+2023-09-21 13:14:26,872 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Transactions 5-4
+2023-09-21 13:14:26,872 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Transactions 5-3
+2023-09-21 13:14:26,871 INFO o.a.j.t.JMeterThread: Thread started: Threads LOYALTY Transactions 5-6
+2023-09-21 13:14:26,873 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Transactions 5-6
+2023-09-21 13:14:26,873 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-7
+2023-09-21 13:14:26,872 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-12
+2023-09-21 13:14:26,873 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-3
+2023-09-21 13:14:26,873 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Web Mobile 6-3 sampler: PDP Web Mobile
+2023-09-21 13:14:26,873 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,873 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,873 INFO o.a.j.t.JMeterThread: Thread finished: Threads LOYALTY Transactions 5-2
+2023-09-21 13:14:26,873 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-7
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-7
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-10
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-9
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-6
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-8
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-1
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-4
+2023-09-21 13:14:26,874 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Web Mobile 6-1 sampler: PDP Web Mobile
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-8
+2023-09-21 13:14:26,874 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-10
+2023-09-21 13:14:26,874 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-8
+2023-09-21 13:14:26,875 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-10
+2023-09-21 13:14:26,874 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-6
+2023-09-21 13:14:26,875 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-5
+2023-09-21 13:14:26,875 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-9
+2023-09-21 13:14:26,875 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-9
+2023-09-21 13:14:26,875 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-6
+2023-09-21 13:14:26,875 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,875 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,875 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-3
+2023-09-21 13:14:26,875 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-2
+2023-09-21 13:14:26,875 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Web Mobile 6-2 sampler: PDP Web Mobile
+2023-09-21 13:14:26,875 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-5
+2023-09-21 13:14:26,876 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-5
+2023-09-21 13:14:26,876 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Web Mobile 6-11
+2023-09-21 13:14:26,876 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-1
+2023-09-21 13:14:26,877 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-6
+2023-09-21 13:14:26,877 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,877 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,877 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Web Mobile 6-11
+2023-09-21 13:14:26,877 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-7
+2023-09-21 13:14:26,877 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-11
+2023-09-21 13:14:26,877 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-10
+2023-09-21 13:14:26,877 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-7
+2023-09-21 13:14:26,878 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-7
+2023-09-21 13:14:26,877 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-1
+2023-09-21 13:14:26,878 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-4
+2023-09-21 13:14:26,878 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,878 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-1
+2023-09-21 13:14:26,878 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Web Mobile 6-2
+2023-09-21 13:14:26,878 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-4
+2023-09-21 13:14:26,878 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-4
+2023-09-21 13:14:26,878 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-2
+2023-09-21 13:14:26,878 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-6
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-5
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-8
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-3
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Web 7-9
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-5
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-2
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-9
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-6
+2023-09-21 13:14:26,879 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-8
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-2
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-8
+2023-09-21 13:14:26,879 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,879 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-2
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-5
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-3
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-5
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-5
+2023-09-21 13:14:26,880 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-9
+2023-09-21 13:14:26,880 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-5
+2023-09-21 13:14:26,880 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-9
+2023-09-21 13:14:26,878 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Web 7-10
+2023-09-21 13:14:26,880 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-9
+2023-09-21 13:14:26,879 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-1
+2023-09-21 13:14:26,880 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa vacia Apps 8-1 sampler: PDP Bolsa vacia Apps
+2023-09-21 13:14:26,880 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-9
+2023-09-21 13:14:26,880 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Web 7-10
+2023-09-21 13:14:26,880 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-7
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-10
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-3
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-8
+2023-09-21 13:14:26,881 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-10
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-7
+2023-09-21 13:14:26,881 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-6
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-8
+2023-09-21 13:14:26,881 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-10
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-7
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-3
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa vacia Apps 8-4
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-3
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-10
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-5
+2023-09-21 13:14:26,881 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-2
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-3
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-6
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-1
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-4
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-10
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-4
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-8
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-6
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-10
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-6
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-5
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-7
+2023-09-21 13:14:26,881 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-5
+2023-09-21 13:14:26,881 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa vacia Apps 8-6
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-2
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-7
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa vacia Apps 8-6
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-8
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-7
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-4
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-1
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP TabSearch Apps 9-9
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-8
+2023-09-21 13:14:26,882 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-7
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-9
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-8
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP TabSearch Apps 9-4
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-8
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-9
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-7
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-4
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-4
+2023-09-21 13:14:26,882 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP TabSearch Apps 9-1
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-7
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-9
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-2
+2023-09-21 13:14:26,883 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa llena Web 10-2 sampler: PDP Bolsa llena Web
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-9
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-8
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-4
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-9
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-8
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-4
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-5
+2023-09-21 13:14:26,883 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-1
+2023-09-21 13:14:26,884 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa llena Web 10-1 sampler: PDP Bolsa llena Web
+2023-09-21 13:14:26,884 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-5
+2023-09-21 13:14:26,884 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-5
+2023-09-21 13:14:26,884 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,884 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,884 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-6
+2023-09-21 13:14:26,884 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-3
+2023-09-21 13:14:26,884 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa llena Web 10-3 sampler: PDP Bolsa llena Web
+2023-09-21 13:14:26,884 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,884 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,884 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Web 10-10
+2023-09-21 13:14:26,884 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-2
+2023-09-21 13:14:26,884 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 11-3
+2023-09-21 13:14:26,884 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa llena Apps 11-3 sampler: PDP Bolsa llena Apps
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-1
+2023-09-21 13:14:26,885 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-6
+2023-09-21 13:14:26,885 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 11-4
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 11-2
+2023-09-21 13:14:26,885 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa llena Apps 11-2 sampler: PDP Bolsa llena Apps
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-6
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-3
+2023-09-21 13:14:26,885 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 11-5
+2023-09-21 13:14:26,885 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 11-8
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Web 10-10
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 11-1
+2023-09-21 13:14:26,886 WARN o.a.j.t.JMeterThread: Interrupting: Threads PDP Bolsa llena Apps 11-1 sampler: PDP Bolsa llena Apps
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Web 10-10
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 11-5
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 11-5
+2023-09-21 13:14:26,885 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 11-4
+2023-09-21 13:14:26,886 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,886 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 11-4
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 11-3
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 11-6
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Stopping: Threads PDP Bolsa llena Apps 11-7
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 11-6
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 11-8
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 11-6
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread started: Threads PDP Bolsa llena Apps 11-7
+2023-09-21 13:14:26,886 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,886 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 11-8
+2023-09-21 13:14:26,886 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2023-09-21 13:14:26,887 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 11-7
+2023-09-21 13:14:26,887 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 11-2
+2023-09-21 13:14:26,887 INFO o.a.j.t.JMeterThread: Thread finished: Threads PDP Bolsa llena Apps 11-1
+2023-09-21 13:14:26,887 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-09-21 13:14:26,887 INFO o.a.j.s.FileServer: Close: registrados.csv@1088405701
+2023-09-21 13:14:26,887 INFO o.a.j.s.FileServer: Close: registrados.csv@928612964
+2023-09-21 13:14:26,888 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@309781110
+2023-09-21 13:14:26,888 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@35672710
+2023-09-21 13:14:26,888 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@887846834
+2023-09-21 13:14:26,888 INFO o.a.j.s.FileServer: Close: idcustomersloyalty.csv@520477738
+2023-09-21 13:14:26,888 INFO o.a.j.s.FileServer: Close: registrados.csv@661386679
+2023-09-21 13:14:26,888 INFO o.a.j.s.FileServer: Close: registrados.csv@108839022
+2023-09-21 13:14:26,888 INFO o.a.j.s.FileServer: Close: products_stock_encryption.csv@1414625551
+2023-09-21 13:14:26,888 INFO o.a.j.s.FileServer: Close: user_ids_bolsa_vacia_web.csv@1414625551
+2023-09-21 13:14:26,888 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
